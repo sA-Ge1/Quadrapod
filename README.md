@@ -1,41 +1,42 @@
+# 🕷️ Quadrapod
 
-🕷️ Quadrapod
-An ESP32 cam based quadruped robot capable of walking and performing movements using servo motors and sensor input. This project demonstrates fundamental concepts in robotics, embedded systems, and mechanical design.
+An **ESP32-CAM based quadruped robot** capable of walking and performing complex movements using servo motors and sensor input.  
+This project demonstrates fundamental concepts in **robotics, embedded systems, and mechanical design**.
 
+---
 
-🚀 Features
-✅ 4-legged walking mechanism with multiple degrees of freedom
+## 🚀 Features
 
-✅ Controlled by ESP32 CAM
+✅ **4-legged walking mechanism** with multiple degrees of freedom  
+✅ Controlled by **ESP32-CAM** (Wi-Fi + Camera module)  
+✅ Driven by **8 servo motors** for coordinated leg movements  
+✅ **Modular design** for easy hardware replacement and upgrades  
 
-✅ Driven by 8 servo motors
+---
 
+## 🧰 Software
 
-✅ Modular design for easy hardware replacement and upgrades
+- **Arduino IDE** (tested on version 1.8.x and 2.x)
+- `Servo` library (`<Servo.h>`)
+- Custom movement control algorithms
 
+---
 
-🧰 Software
-Arduino IDE (tested on version 1.8.x and 2.x)
+## 🚀 Getting Started
 
-Servo library (<Servo.h>)
+⚠️ **Tip:**  
+Make sure your servos are powered through a **separate supply** (not from the ESP32 itself) to avoid voltage drops or brownouts.
 
-Adafruit SSD1306 and GFX libraries for OLED
+---
 
-Custom movement control algorithms
+### 🔥 Upload Code
 
-🚀 Getting Started
-⚠️ Tip: Make sure your servos are powered through a separate supply to avoid brownouts.
-
-🔥 Upload Code
-bash
+```bash
 git clone https://github.com/sA-Ge1/Quadrapod.git
 cd Quadrapod
+```
 
-Open the project in Arduino IDE.
-Select your board and correct COM port.
-Click Upload.
-
-🎯 Usage
+### 🎯 Usage
 After uploading, the Quadrapod will initialize and move to a standing posture.
 
-Connect to your IP address and use the web interface for control.
+Connect to the ESP32-CAM IP address on your network and use the web interface for control.
